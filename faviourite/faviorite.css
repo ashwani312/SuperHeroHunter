@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ysabeau+Infant&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/* header of the webpage styled here */
+.header {
+    height: 40vh;
+    width: 100%;
+    background: rgb(25, 25, 96);
+    margin-bottom: 1rem;
+}
+
+.header nav {
+    padding: 10px 30px;
+}
+
+.header nav a {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    color: aqua;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* fav list elements styled here  */
+
+.favListHead {
+    font-size: 30px;
+    color: orange;
+    margin-top: 15px;
+}
+
+.faviorite-list {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.faviorite-list ul {
+    text-align: center;
+}
+
+.favList {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.favList li {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    gap: 5px;
+    list-style: none;
+}
+
+.favList li img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favList li h3 {
+    font-size: 14px;
+}
+
+.favList li button {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 8px 13px;
+    font-size: 15px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 7px;
+}
+@media only screen and (max-width: 600px) {
+ body {
+        font-size: 14px;
+    }
+    
+   .header  nav a {
+        font-size: 25px;
+    }
+    .box h1{
+        font-size: 18px;
+    }
+    .box h3{
+        font-size: 14px;
+    }
+
+}

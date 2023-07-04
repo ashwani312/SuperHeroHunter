@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica&family=Lato&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.header {
+    height: 50vh;
+    width: 100%;
+    background: rgb(25, 25, 96);
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 0;
+}
+
+.header nav {
+    padding: 10px 30px;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logoName {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+}
+
+#favBtn {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: #f44336;
+    border-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* --------- box */
+.box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 25%;
+}
+
+.box .inputBox {
+    text-align: left;
+    font-size: 20px;
+    padding: 14px 30px;
+    width: 50vw;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.inputBox::placeholder {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ----------------superhero results --------*/
+.results {
+    overflow-y: scroll;
+    height: max-content;
+    width: 40%;
+    background-color: #000000;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card:hover {
+    background-color: rgba(71, 73, 75, 0.4);
+}
+
+.card {
+
+    width: 100%;
+    border: 1px solid gray;
+    padding: 5px 9px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content img {
+    width: 85px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.card h4 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card .buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.buttons .favorite {
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #f44336;
+}
+
+.buttons .know {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}
+
+.results::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.results::-webkit-scrollbar-track {
+    background-color: rgb(197, 32, 32);
+}
+
+.results::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 0);
+    outline: none;
+    border-radius: 10px;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+
+
+
+/* static Home  superheros  styled here*/
+.sample {
+    margin-top: 2rem;
+    height: max-content;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    z-index: 0;
+    position: static;
+
+}
+
+.sample .samplecards {
+    width: max-content;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.samplecards>div {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Geologica', sans-serif;
+}
+
+.samplecard img {
+    width: 150px;
+    height: 170px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #000000;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(142, 115, 115);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .logoName {
+        font-size: 25px;
+    }
+
+    #favBtn {
+        padding: 10px;
+    }
+
+    .box .inputBox {
+        padding: 8px 20px;
+        font-size: 15px;
+        width: 60vw;
+    }
+
+    .results {
+        top: 31%;
+        width: 60vw;
+        left: 25%;
+    }
+
+    .card {
+        padding: 2px;
+    }
+
+    .card h4 {
+        font-size: 10px;
+    }
+
+    .card img {
+        width: 10px;
+        object-fit: cover;
+    }
+
+    .buttons .favorite {
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0;
+        padding: 3px;
+
+    }
+
+
+    .content img {
+        width: 100px;
+    }
+}
