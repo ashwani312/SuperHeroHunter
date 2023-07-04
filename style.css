@@ -7,7 +7,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-
+/* ---------web page header-------- */
 .header {
     height: 50vh;
     width: 100%;
@@ -47,7 +47,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-/* --------- box */
+/* --------- box elements-----------------*/
 .box {
     position: absolute;
     text-align: center;
@@ -81,19 +81,16 @@
     overflow-y: scroll;
     z-index: 10;
 }
-
 .cards {
     display: flex;
     flex-wrap: wrap;
 
 }
-
 .card:hover {
     background-color: rgba(71, 73, 75, 0.4);
 }
-
+/* ------------every cards------------ */
 .card {
-
     width: 100%;
     border: 1px solid gray;
     padding: 5px 9px;
@@ -104,33 +101,33 @@
     display: flex;
     justify-content: space-between;
 }
-
+/* superhero content */
 .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+/* superhero image */
 .content img {
     width: 85px;
     height: 110px;
     object-fit: cover;
     border: 1px solid black;
 }
-
+/* superhero name */
 .card h4 {
     font-size: 15px;
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
-
+/* buttons */
 .card .buttons {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
 }
-
+/* faviourite buttons */
 .buttons .favorite {
     color: white;
     border: none;
@@ -141,7 +138,7 @@
     border-radius: 6px;
     background-color: #f44336;
 }
-
+/* know more button */
 .buttons .know {
     padding: 8px 15px;
     font-size: 15px;
@@ -155,7 +152,7 @@
 .hide {
     display: none;
 }
-
+/* scrollbar */
 .results::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -170,14 +167,10 @@
     outline: none;
     border-radius: 10px;
 }
-
+/* to blur the backround */
 .blur {
     filter: blur(1px);
 }
-
-
-
-
 /* static Home  superheros  styled here*/
 .sample {
     margin-top: 2rem;
@@ -187,9 +180,8 @@
     display: flex;
     z-index: 0;
     position: static;
-
 }
-
+/* static home page */
 .sample .samplecards {
     width: max-content;
     display: flex;
@@ -236,6 +228,7 @@
     background: #b30000;
 }
 
+/* responsive design */
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
@@ -282,8 +275,6 @@
         padding: 3px;
 
     }
-
-
     .content img {
         width: 100px;
     }
